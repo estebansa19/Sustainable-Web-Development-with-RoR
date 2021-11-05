@@ -1,0 +1,34 @@
+1. Why This Book Exists:
+  - ¿Por qué sustainable? Un software que puede ser sostenible en el tiempo, que puede ser 
+    modificado por muchos desarrolladores paulatinamente, que los cambios son fáciles de realizar, 
+    es un software sostenible y escalable.
+
+  - ¿Por qué deberíamos preocuparnos por esto? El software existe debido a una necesidad de la vida 
+    real, si esta necesidad persiste, el software debe persistir también. Debe refinarse de manera
+    continua ya que la propia necesidad debe irse refinando. 
+
+    Construir software que sea sostenible es más mantenible en respecto a dinero también, 
+    desarrollar software es demasiado caro, por ende, desarrollar un buen software nos va a ahorrar
+    dinero.
+
+    Además, es más ameno para el desarrollador trabajar en un buen codebase.
+
+  - ¿Cómo valorar esta sostenibilidad? Esto depende mucho de la visión de producto que tenga la 
+    empresa, porque de acuerdo a esto se pueden tomar decisiones que cambien el rumbo del producto
+    tecnológico que tenemos
+
+  - Assumptions del libro:
+    * El software tiene un propósito claro (a menos que sea con fines de discoveries o prototipado)
+    * El software necesita existir por años
+    * El software evolucionará
+    * El equipo de desarrollo cambiará
+    * Valoramos la sostenibilidad, consistencia y calidad
+      a) Sostenibilidad.
+      b) Consistencia: que las soluciones que le damos a problemas en nuestro codebase sean 
+        consistentes, las preferencias personales no entran en este ecuación.
+      c) Calidad: que las cosas estén bien hechas desde el comienzo pero sin un over-engineering.
+  
+  - Oportunity Cost: son oportunidades que tenemos de mejorar puntos de dolor de nuestra 
+    aplicación.
+
+  - Carrying Cost: es el costo que estamos pagando por trabajar en un Opportunity Cost.
