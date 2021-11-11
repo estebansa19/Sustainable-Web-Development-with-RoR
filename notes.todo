@@ -32,3 +32,25 @@
     aplicación.
 
   - Carrying Cost: es el costo que estamos pagando por trabajar en un Opportunity Cost.
+
+2. The Rails Application Architecture:
+  El autor nos plantea que hay 4 agrupaciones de los componenentes de los cuales hace parte una 
+  Rails app
+
+  • Boundaries, que son quienes normalmente reciben un input, ejecutan cierta lógica de negocio y 
+    luego se las arreglan para que se envíe o renderice un input. (Controllers, Mailers, Jobs, 
+    ActiveStorage, etc)
+  • Views, que son quienes muestran la información: HTML, ERB, JS Packs, CSS, JBuilder, etc.
+  • Models, que son nuestras clases de ActiveRecord para interacturar con la DB.
+  • Everything else.
+
+  Ventajas de usar esta estructura:
+    Que ya gran parte de las decisiones de arquitectura fueron tomadas y a la hora de empezar un 
+    proyecto tenemos una plantilla de la cual partir.
+
+  Desventajas de usar esta estructura:
+    • Está diseñada para apps que tenga una DB.
+    • Rails nunca nos dice dónde debería ir la lógica de negocio. 
+
+3. Following Along in This Book:
+  Este capítulo es una guía para entender cómo está escrito el libro y las convenciones que usa.
