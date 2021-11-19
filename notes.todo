@@ -50,7 +50,22 @@
 
   Desventajas de usar esta estructura:
     • Está diseñada para apps que tenga una DB.
-    • Rails nunca nos dice dónde debería ir la lógica de negocio. 
+    • Rails nunca nos dice dónde debería ir la lógica de negocio.
 
 3. Following Along in This Book:
   Este capítulo es una guía para entender cómo está escrito el libro y las convenciones que usa.
+
+4. Start Your App Off Right:
+  rails new es demasiado poderoso pero si queremos crear una aplicación con las características de 
+  una app sustainable, debemos hacer algunos ajustes enfocados al developer workflow (flujo de 
+  rabajo desde el setup hasta continuous deployment).
+
+  El primer cambio que se hará para tener una app sustainable es borrar el database.yml y el 
+  credentials.yml y manejar estas runtime variables con dotenv.
+
+  El segundo cambio es manejar scripts en lugar de documentación, estos scripts serán conformados por:
+
+  - un script de inicialización del proyecto. bin/setup
+  - un script para ejecutar el proyecto. bin/run
+  - un script para ejecutar todas las pruebas y checks del proyecto. bin/ci
+
