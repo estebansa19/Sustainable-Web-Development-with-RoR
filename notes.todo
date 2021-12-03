@@ -69,3 +69,23 @@
   - un script para ejecutar el proyecto. bin/run
   - un script para ejecutar todas las pruebas y checks del proyecto. bin/ci
 
+5. Business Logic (Does Not Go in Active Records):
+  Hay algo para lo cual Rails no nos tiene una respuesta certera y es dónde poner  la lógica de 
+  negocio.
+
+  Aparte de la complejidad que nos trae la lógica de negocios, esto puede hacerse más complejo aún 
+  por las decisiones que tomemos. La complejidad propia de nuestro modelo de negocios se denomina 
+  como: "complejidad necesaria o esencial", la complejidad que añadimos nosotros con nuestras 
+  decisiones se denomina como: "complejidad innecesaria o accidental".
+
+  Para empeorar las cosas, esta parte de la lógica de negocio tiene mucha complejidad y tiene una 
+  alta taza de frecuencia de cambio.  
+
+  Se definen 2 métricas en estos casos:
+
+  1. fan-in: la cantidad de veces en que el comportamiento de un objeto es llamado.
+  2. fan-out: la capacidad que tiene un objeto para usar el comportamiento de otro objeto.
+
+  Moviendo la lógica de los modelos a clases en específico que solamente estén encargadas de esta 
+  funcionalidad, logramos evitar tener ese código complejo y que es demasiado propenso a camiar en 
+  clases principales de nuestra aplicación.
